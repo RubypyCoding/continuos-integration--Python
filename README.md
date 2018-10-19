@@ -16,7 +16,7 @@ CI combined with unit and integration tests check that any code modifications do
 
 The following picture represents a high level perspective on how continuous integration and deployment can work.
 
-![alt text](https://raw.githubusercontent.com/RubypyCoding/continuos-integration--Python/images/continuous-integration.png)
+![alt text](https://github.com/RubypyCoding/continuos-integration--Python/tree/master/images/continuous-integration.png)
 
 - When new code is committed to a source repository there is a hook that notifies the continuous integration server that new code needs to be built (the continuous integration server could also poll the source code repository if a notification is not possible).
 
