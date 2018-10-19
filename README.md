@@ -28,7 +28,7 @@ The following picture represents a high level perspective on how continuous inte
 
 - Finally the deployment process is completed via restarting services and related deployment activities.
 
-There are many other ways a continuous integration server and its deployments can be structured. The above was just one example of a relatively simple setup. [CI](https://www.fullstackpython.com/continuous-integration.html).
+There are many other ways a continuous integration server and its deployments can be structured. The above was just one example of a relatively simple setup. Fuente: [CI](https://www.fullstackpython.com/continuous-integration.html).
 
 ## Heroku Configuration for CI
 
@@ -42,7 +42,7 @@ Create a Heroku account.
 
 Install Heroku CLI.
 
-```python
+```
 $ brew install heroku/brew/heroku
 ```
 
@@ -50,7 +50,7 @@ $ brew install heroku/brew/heroku
 
 In terminal go to your project folder and login to heroku:
 
-```python
+```
 $ heroku login
 ```
 
@@ -58,8 +58,8 @@ $ heroku login
 
 Create your project name:
 
-```python
-$ heroku create <appname>>
+```
+$ heroku create <<appname>>
 ```
 
 #### Step 5
@@ -90,23 +90,23 @@ Install [PIP](https://www.w3schools.com/python/python_pip.asp) in your system PI
 
 Check if you have installed PIP:
 
-```python
+```
 $ pip --version
 ```
 
 If not:
 
-```python
+```
 $ sudo easy_install pip
 ```
 
-[In case of error](https://stackoverflow.com/questions/20082935/how-to-install-pip-for-python-3-on-mac-os-x).
+Check this link [in case of error](https://stackoverflow.com/questions/20082935/how-to-install-pip-for-python-3-on-mac-os-x).
 
 #### Step 2
 
 Create `requirements.txt` in the folder of your program:
 
-```python
+```
 django
 gunicorn
 django-heroku
@@ -122,7 +122,7 @@ Create a Travis CI account and flick the repository switch on for your repo.
 
 Create a file called `.travis.yml` in the folder of your program:
 
-```python
+```
 language: python
 python:
   - "3.6"
@@ -144,7 +144,7 @@ For advanced build configuration, see the Travis CI documentation on [Configurin
 #### Step 5 - Trigger builds
 To trigger builds,  push the commit that adds “.travis.yml” to the project.
 
-```python
+```
 $ git status
 $ git add .
 $ git commit -m "Adding travis yml"
