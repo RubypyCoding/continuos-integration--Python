@@ -64,19 +64,19 @@ $ heroku create <<appname>>
 
 #### Step 5
 
-Inside your heroku dashboard, go to "Deploy", search for "Deployment method" and then select the GitHub option.
+Inside your heroku dashboard, go to `Deploy` section, search for `Deployment method` and then select the GitHub option.
 
 #### Step 6
 
-At Deploy tab on the “Automatic deploys” section don't forget to check the "Wait for CI to pass before deploy" option and enable the Automatic Deploys.
+At Deploy tab on the `Automatic deploys` section don't forget to check the `Wait for CI to pass before deploy` option and enable the `Automatic Deploys`.
 
 #### Step 7
 
-Inside your heroku dashboard, go to "Setting" section and enable heroku builpacks, select python option.
+Inside your heroku dashboard, go to `Setting` section and enable `heroku buildpacks`, select python option.
 
 #### Step 8
 
-You can verify in your github repository on the Webhooks Settings. You have linked your app heroku account through webhooks. A webhook in web development is a method of augmenting or altering the behaviour of a web page, or web application, with custom callbacks.
+You can verify in your github repository on the `Webhooks Settings`. You have linked your app heroku account through webhooks. A webhook in web development is a method of augmenting or altering the behaviour of a web page, or web application, with custom callbacks.
 
 
 ## CI Configuration in Python
@@ -86,7 +86,7 @@ We will use Travis CI to test various components of our software stack before re
 
 #### Step 1
 
-Install [PIP](https://www.w3schools.com/python/python_pip.asp) in your system PIP is a package manager for Python packages, or modules. 
+Install [PIP](https://www.w3schools.com/python/python_pip.asp) in your system. PIP is a package manager for Python packages, or modules. 
 
 Check if you have installed PIP:
 
@@ -104,7 +104,7 @@ Check this link [in case of error](https://stackoverflow.com/questions/20082935/
 
 #### Step 2
 
-Create `requirements.txt` in the folder of your program:
+Create `requirements.txt` in the folder of your program. Add the following code:
 
 ```
 django
@@ -157,7 +157,7 @@ Go to your Travis CI dashboard and click on `Restart build` or simply wait the r
 
 #### Step 7 - Deploy it automatically
 
-Go to your Heroku Dashboard and check the lastest activity. Now everytime you update your project in github repository, Travis CI will be running the tests and when this tests were passed Heroku will deploy it automatically!
+Go to your Heroku Dashboard and check the lastest activity. Now everytime you update your project in github repository, Travis CI will be running the tests and when these tests were passed Heroku will deploy it automatically!
 
 CI SUPER POWER!!!!
 
